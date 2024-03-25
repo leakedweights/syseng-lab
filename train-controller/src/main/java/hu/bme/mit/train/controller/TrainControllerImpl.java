@@ -51,7 +51,7 @@ public class TrainControllerImpl implements TrainController {
 	public void setJoystickPosition(int joystickPosition) {
 		this.step = joystickPosition;
 		if(jostickPosition != 0 && this.referenceSpeed < this.speedLimit) {
-			this.referenceSpeed += (jostickPosition > 0 ? -1 : 1);
+			this.referenceSpeed += (joystickPosition > 0 ? -1 : 1);
 		}
 	}
 }
